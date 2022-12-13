@@ -1,0 +1,7 @@
+---
+- hosts: ubuntu
+  tasks:
+     - include_role:
+         name: create_user
+       vars:
+         user_state: present
